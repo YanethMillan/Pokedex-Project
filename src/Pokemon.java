@@ -45,3 +45,4 @@ public class Pokemon {
     }
     
 }
+// Archivo de modelo Pokemon creado el lunes
