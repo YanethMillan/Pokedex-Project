@@ -1,12 +1,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Pokemon pikachu = new Pokemon(25, "pikachu", "electric", 35);
+        Pokemon pikachu = new Pokemon(25, "Pikachu", "Electric", 35);
         
-        System.out.println("Pokémon creado con éxito");
-        System.out.println("Nombre: " + pikachu.getName());
-        System.out.println("Tipo: " + pikachu.getType());
-        System.out.println("HP: " + pikachu.getHp());
+        System.out.println("Pokémon successfully created!");
+        
+        System.out.println(pikachu);
     }
     
 }

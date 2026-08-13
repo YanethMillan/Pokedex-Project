@@ -1,6 +1,6 @@
 
 public class Pokemon {
-     private int id;
+    private int id;
     private String name;
     private String type;
     private int hp;
@@ -43,6 +43,10 @@ public class Pokemon {
     public void setHp(int hp) {
         this.hp = hp;
     }
-    
+
+    @Override
+    public String toString() {
+        return "#" + id + " " + name + " | Type: " + type + " | HP: " + hp; 
+    }   
 }
 // Archivo de modelo Pokemon creado el lunes
