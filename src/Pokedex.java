@@ -8,4 +8,16 @@ public class Pokedex {
     public Pokedex(){
         this.pokemonList = new ArrayList<>();
     }
+    
+    public void addPokemon(Pokemon pokemon){
+        this.pokemonList.add(pokemon);
+    }
+    
+    public Pokemon searchByName(String name){
+        for(Pokemon pokemon : pokemonList){
+            if(pokemon.getName().equalsIgnoreCase(name))
+        }
+        return pokemon;
+    }
 }
+
