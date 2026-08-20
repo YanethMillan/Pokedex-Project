@@ -1,11 +1,19 @@
+import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
-        Pokemon pikachu = new Pokemon(25, "Pikachu", "Electric", 35);
+        Scanner scanner = new Scanner (System.in);
+        Pokedex pokedex = new Pokedex();
+        boolean running = true;
         
-        System.out.println("Pokémon successfully created!");
+        System.out.println("=== WELCOME TO YOUR POKEDEX ===");
         
-        System.out.println(pikachu);
+        
+        
+        
+        
+        
     }
     
 }
