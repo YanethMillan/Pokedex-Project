@@ -2,6 +2,7 @@ package com.pokedex.pokedex.project;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -69,8 +70,21 @@ public class Main {
                 case 3:
                     pokedex.listAllPokemon();
                     break;
-
                 case 4:
+                    List<Pokemon> list = pokedex.getPokemonList();
+                    for(int position = 0; position < list.size() -1; position++){
+                        if(){
+                        }
+                }
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                case 5:
                     running = false;
                     System.out.println("Closing Pokedex... Goodbye!");
                     break;
