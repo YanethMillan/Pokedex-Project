@@ -73,7 +73,10 @@ public class Main {
                 case 4:
                     List<Pokemon> list = pokedex.getPokemonList();
                     for(int position = 0; position < list.size() -1; position++){
-                        if(){
+                        if(list.get(position).getHp() > list.get(position +1).getHp()){
+                            Pokemon temporary = list.get(position);
+                            list.set(position, list.get(position + 1));
+                            list.set(position + 1, temporary);
                         }
                 }
                 
