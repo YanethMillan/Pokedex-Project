@@ -19,7 +19,8 @@ public class Main {
             System.out.println("1. Fetch and Add Pokemon from PokéAPI");
             System.out.println("2. Search Pokemon in local Pokedex");
             System.out.println("3. Show all stored Pokemon");
-            System.out.println("4. Exit");
+            System.out.println("4. Show Pokemon sorted by HP");
+            System.out.println("5. Exit");
             System.out.print("Option: ");
 
             int choice = scanner.nextInt();
@@ -72,21 +73,19 @@ public class Main {
                     break;
                 case 4:
                     List<Pokemon> list = pokedex.getPokemonList();
-                    for(int position = 0; position < list.size() -1; position++){
-                        if(list.get(position).getHp() > list.get(position +1).getHp()){
-                            Pokemon temporary = list.get(position);
-                            list.set(position, list.get(position + 1));
-                            list.set(position + 1, temporary);
+                    for (int round = 0; round < list.size() - 1; round++) {
+                        for (int position = 0; position < list.size() - 1; position++) {
+                            if (list.get(position).getHp() > list.get(position + 1).getHp()) {
+                                Pokemon temporary = list.get(position);
+                                list.set(position, list.get(position + 1));
+                                list.set(position + 1, temporary);
+                            }
                         }
-                }
-                
+                    }
+                    pokedex.listAllPokemon();
                     
-                    
-                    
-                    
-                    
-                    
-                    
+                    break;
+
                 case 5:
                     running = false;
                     System.out.println("Closing Pokedex... Goodbye!");
