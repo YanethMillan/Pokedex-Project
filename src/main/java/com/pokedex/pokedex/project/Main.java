@@ -22,9 +22,13 @@ public class Main {
             System.out.println("4. Show Pokemon sorted by HP");
             System.out.println("5. Exit");
             System.out.print("Option: ");
-
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            
+             if (scanner.hasNextInt()) {
+                int choice = scanner.nextInt();
+                scanner.nextLine();
+                
+            //int choice = scanner.nextInt();
+            //scanner.nextLine();
 
             switch (choice) {
                 case 1:
